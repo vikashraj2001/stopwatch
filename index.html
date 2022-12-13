@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Stop Watch</title>
+     <style>
+        
+       #watch{
+     
+        text-align: center;
+        padding: 10px;
+        font-size: x-large;
+        background-color: rgb(105, 115, 143);
+        margin-left: 300px;
+        margin-right: 300px;
+        padding-bottom: 100px;
+        
+       }
+       #head{
+         color: rgb(136, 122, 122);
+       }
+       #start{
+        padding: 5px 20px;
+        margin-right: 10px ;
+        border-color: white;
+        background-color:rgb(0, 255, 255);
+        
+        
+       }
+       #stop{
+        background-color: orange;
+        border-color: white;
+        padding:5px 20px;
+        margin-right: 10px;
+        background-color:dodgerblue ;
+
+       }
+       #reset{
+        background-color: orange;
+        border-color: white;
+        padding:5px 20px;
+        margin-right: 10px;
+        background-color:orangered;
+
+       }
+       #hr{
+          font-size: larger;
+          margin-bottom: 20px
+       }
+       .class{
+          font-size: larger;
+          margin-bottom: 20px
+       }
+       #min{
+          font-size: larger;
+          margin-bottom: 20px
+       }
+       .digit{
+          font-size: larger;
+          margin-bottom: 20px
+       }
+       #sec{
+          font-size: larger;
+          margin-bottom: 20px
+       }
+       #button{
+          margin-top: 30px;
+       }
+
+     </style>
+
+</head>
+<body>
+      <div id="watch">
+         <div>
+          <H1 class="head">STOP WATCH</H1>
+          <span class="digit" id="hr">00</span>
+          <span class="digit" >Hr :</span>
+          <span class="digit" id="min">00</span>
+          <span class="digit" >Min :</span>
+          <span class="digit" id="sec">00</span>
+          <span class="digit" >Sec :</span>
+          <span class="digit" id="count">00</span>
+      </div>
+          <div id="button">
+               <button id="start" onclick="start()">Start</button>
+               <button id="stop" onclick="stop()">Stop</button>
+               <button id="reset" onclick="reset()">Reset</button>
+          </div>
+
+      </div>
+      <script src="script.js"></script>
+      
+</body>
+</html>
